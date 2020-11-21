@@ -512,9 +512,12 @@ function adjustOutsiders(char)
     		dist[2] = dist[2] - 1
     		dist[1] = dist[1] + 1
         end
-    elseif char == 'Baron' or char == 'Conspirator' then
+    elseif char == 'Baron' or char == 'Conspirator' or char == 'Mutineer' then
         dist[2] = dist[2] + 2
         dist[1] = dist[1] - 2
+    elseif char == 'Iscar' then
+        dist[3] = dist[3] - 1
+        dist[1] = dist[1] + 1
     end
 end
 
